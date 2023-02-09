@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpyTech Central</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="image/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="image/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="image/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="image/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="image/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="image/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="image/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="image/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="image/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="image/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="image/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-user-secret"></i> SpyTech Central
+      </a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">home</a>
+        <a href="#products">products</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <a href="register.html" class="fas fa-user"></a>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="input-box" />
+        <label for="input-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <i class="fa fa-times cross" style="cursor: pointer"></i>
+        <section class="container content-section">
+          <div class="cart-items box"></div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">
+            PURCHASE
+          </button>
+        </section>
+      </div>
+    </header>
+    <section id="snackbar-container">
+
+    </section>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide box"
+            style="background: url(image/home-slider-1.jpg)"
+          >
+            <div class="content">
+              <h3>happy buying</h3>
+              <p>special discount</p>
+              <div class="button">
+                <a href="#" class="btn">shop now</a>
+              </div>
+              <video src="particles.mp4" muted="" autoplay="true"></video>
+              <h2><span>S</span>pyTech <span>C</span>entral<span>G</span>adgets</h2>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide box"
+            style="background: url(image/home-slider-2.jpg)"
+          >
+            <div class="content">
+              <h3>upto 30% off</h3>
+              <p>on all products</p>
+              <div class="button">
+                <a href="#" class="btn">shop now</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide box"
+            style="background: url(image/home-slider-3.jpg)"
+          >
+            <div class="content">
+              <h3>limited offer</h3>
+              <p>don't miss it</p>
+              <div class="button">
+                <a href="#" class="btn">shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+      <h1 class="heading">our <span>products</span></h1>
+
+      <div class="swiper products-slider" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-1.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">Camera</h3>
+              <div class="price shop-item-price">
+                $99.99
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-2.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">Book</h3>
+              <div class="price shop-item-price">
+                $79.99
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">Glasses</h3>
+              <div class="price shop-item-price">
+                $69.99
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-4.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">Compass</h3>
+              <div class="price shop-item-price">
+                $59.99 
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">Antic Camera</h3>
+              <div class="price shop-item-price">
+                $49.99 
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"> </a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-6.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">StopWatch</h3>
+              <div class="price shop-item-price">
+                $79.99 
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+            <div class="image">
+              <img class="shop-item-image" src="image/product-7.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3 class="shop-item-title">Gun</h3>
+              <div class="price shop-item-price">
+                $89.99 
+              </div>
+
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="content" data-aos="fade-right">
+        <h3>about us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+          adipisci neque! Veritatis laboriosam odio corporis, quo fugit
+          architecto. Veritatis in dicta qui odit soluta sequi ipsam facere eum
+          numquam! Obcaecati.
+        </p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- arrivals section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.79131489176!2d72.84566681471507!3d19.160609987039468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b64dbaaaaaab%3A0xf1f8b92ff5261e27!2sGoregaon%20Station%20Market!5e0!3m2!1sen!2sin!4v1675918335816!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="">
+          <h3 data-aos="zoom-in">tell us something!</h3>
+          <input
+            data-aos="zoom-in"
+            type="text"
+            placeholder="your name"
+            class="box"
+          />
+          <input
+            data-aos="zoom-in"
+            type="email"
+            placeholder="your email"
+            class="box"
+          />
+          <input
+            data-aos="zoom-in"
+            type="number"
+            placeholder="your number"
+            class="box"
+          />
+          <textarea
+            data-aos="zoom-in"
+            placeholder="your message"
+            class="box"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input
+            data-aos="zoom-in"
+            type="submit"
+            value="send message"
+            class="btn"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer" id="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-right">
+          <h3>our branches</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> products </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>contact us</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> random@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104
+          </a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+          <h3>contact us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>pratiksha sankhe and apurv sonawane</span> | all rights
+        reserved
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file links  -->
+    <script src="js/script.js"></script>
+    <script src="js/store.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 400,
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
